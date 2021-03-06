@@ -1,0 +1,275 @@
+:root{
+ --white: #FFFFFF;
+ --off-white:#F3F1F1;
+ --yellow:#FFE70F;
+ --light-yellow: #FFEB3B;
+ --red:#FA0525;
+ --light-red:#FF5252;
+ --black:#090708;
+ --light-black: #0D0D0D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--black);
+    color: var(--off-white);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn{
+    padding: 18px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{  
+   list-style: none;
+   padding: 0 20px ;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-yellow);
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(./img/header-bg.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 60% 50%;
+    text-align: center;
+    background-size: cover;
+}
+
+h1{
+    font-size: 67.34px;
+    font-weight: 800;
+}
+
+.hero p{
+    padding: 16px 0 24px 0;
+}
+
+.hero .btn{
+    background: var(--red);
+    color: var(--white);
+    transition: all 0.8s ease-out;
+}
+
+.hero .btn:hover{
+    background: var(--light-red);
+}
+
+/* CARDAPIO */
+
+#cardapio{
+    padding: 50px 0 0 0;
+}
+
+.container{
+    margin: auto;
+    text-align: center;
+}
+
+h2{
+    font-size: 50.52px;
+    color: var(--light-yellow);
+    padding: 20px 0 24px 0;
+}
+
+.cardapios{
+    display: flex;
+    justify-content: space-between;
+    width: min(90vw, 1000px); 
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.cardapio-item{
+    width: 300px;
+    height: 400px;
+    margin: 30px 0;
+    padding: 25px 10px;
+    background: var(--light-black);
+    border-radius:5px;
+}
+
+.cardapio-item:hover{
+   
+    transition: all 0.8s ease;
+    background: var(--black);
+}
+
+.pizza-img{
+    max-width: 70%;
+    filter: drop-shadow(0px 2px 6px rgba(225, 128, 27, 0.36));
+}
+
+.pizza-nome{
+    color: var(--white);
+}
+
+.ingredientes{
+    padding: 16px;
+}
+
+.preco{
+    color: var(--yellow);
+    font-weight: 600;
+}
+
+
+
+/* CONTATOS */
+#contatos{
+    text-align: center;
+    background: var(--light-black);
+    padding: 0 0 20px 0;
+}
+
+.contatos-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    width: min(90vw, 1000px);
+}
+.contatos-div img{
+    max-width: 70%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 20px 0 7px 0;
+    text-align: left;
+}
+
+input{
+    padding: 10px 10px;
+    background: var(--off-white);
+    border: none;
+}
+
+textarea{
+    padding: 10px 0 30px 0;
+}
+
+form .btn{
+    margin: 16px 0;
+    background: var(--red);
+    color: var(--white);
+    font-weight: bold;
+}
+
+form .btn:hover{
+    transition: 1s all ease-in-out;
+    background: var(--light-red);
+    color: var(--black);
+}
+
+/* FOOTER */
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+ @media all and (max-width: 768px){
+     .nav-ul{
+         display: none;
+     }
+
+     .nav-ul.show{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    } 
+
+    img.open, img.close{
+        filter: brightness(0) invert(1);
+    }
+
+    .toggle-menu {
+        display: block;
+        cursor: pointer;
+     }
+
+     .toggle-menu .close {
+        display: none;
+    }
+
+    .toggle-menu.show .close{
+        display: block;
+        transition: 1s;
+    }
+
+    .toggle-menu.close, .toggle-menu.show .open, .nav-ul {
+        display: none;
+    }
+
+    nav li{
+        padding: 15px 0;
+     }
+
+     .cardapios{
+         justify-content: center;
+     }
+
+     .contatos-div{
+        grid-template-columns: 1fr;
+     }
+
+     .contatos-div img{
+         display: none;
+     }
+
+     .pizza-img{
+        max-width: 50%;
+     }
+
+     form{
+        margin: 0 30px;
+     }
+ }
+
+ /* 1024 por 768 */

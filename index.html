@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Spizza</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p> Spizza</p>
+            <div class="toggle-menu" onclick="toggleMenu()">
+                <img src="img/menu.svg" alt="" class="open" aria-label="open-menu">
+                <img src="img/close.svg" alt="" class="close" aria-label="close-menu">
+            </div>
+
+            <ul class="nav-ul">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Spizza</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, quidem.</p>
+            <a href="#cardapio" class="btn">Veja nosso cardapio </a>
+        </div>
+    </div>
+
+    <section id="cardapio">
+        <div class="container">
+            <h2>Cardápio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quibusdam?</p>
+
+            <div class="cardapios">
+                <div class="cardapio-item">
+                    <img class="pizza-img"
+                        src="./img/0 - chicken.png"
+                        alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/1-calabresa.jpg" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/2-vegetariana.png" alt="">
+                    <h3 class="pizza-nome">Pizza Vegetariana</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/3-peito de peru.png" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img"
+                        src="./img/4 -chicken.jpg" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/5 - brocolis.png" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/6- azeitona pimentao queijo.png" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/7-tuna.jpg" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+
+                <div class="cardapio-item">
+                    <img class="pizza-img" src="./img/8 - cogumelo, capricciosa.png" alt="">
+                    <h3 class="pizza-nome">Pizza Calabresa</h3>
+                    <p class="ingredientes">Ingredientes: Calabresa, Queijo Mussarela.</p>
+                    <p class="preco">R$30,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos">
+        <h2>Entre em contato</h2>
+
+        <div class="container contatos-div">
+            <img src="./img/contact-img.png">
+
+            <div>
+                <form action="">
+                    <label for="#nome">None</label>
+                    <input type="text" placeholder="Digite seu nome" id="nome" required>
+
+                    <label for="#email">Email</label>
+                    <input type="email" placeholder="Digite seu email" id="email" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea rows="4" cols="30" id="mensagem"> Insira sua mensagem aqui</textarea>
+
+                    <button class="btn"> Enviar mensagem</button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>Desenvolvido por Maiara de Souza Costa </footer>
+</body>
+
+</html>
